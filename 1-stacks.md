@@ -66,7 +66,7 @@ do {
 ## V. Problem to Solve: Interrupting Conversations
 Write a program that tracks a conversation so everyone gets to finish their stories!
 
-Oftentimes my friends and I all get talking and as one person tells a story another remembers a story and begins to tell it, but we don't always remember to come back to the person who was telling their story last. This program will take in the name of who is talking and when someone interrupts or side tracks the story it will store the previous person's name and when the current person is done it will take that person and put them back as the one telling a story.
+Oftentimes friends get talking and as one person tells a story another remembers a story and begins to tell it, but they don't always remember to come back to the person who was telling their story last. This program will take in the name of who is talking and when someone interrupts or side tracks the story it will store the previous person's name and when the current person is done it will take that person and put them back as the one telling a story.
 
 Program Requirements:
 * There will be three options- add a name, remove a name, see current name.
