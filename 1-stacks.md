@@ -78,7 +78,7 @@ Test the program with the following scenarios:
 * Test 1: Select "see current name" option when stack is empty and current name is blank.\
     Expected Output: Some error message about starting new conversation.
 * Test 2: Add six names to the conversation.\
-    Expected Output: Some error message about the conversation getting to full.
+    Expected Output: Some error message about the conversation getting too full.
 * Test 3: Add "Nelly", select "see current name".\
     Expected Output: "Nelly"
 * Test 4: Add "Kyle", Add "Ethan", Remove "Ethan", See current name.\
