@@ -10,9 +10,7 @@ For questions or comments, please send them to:\
     sco20041@byui.edu
 ## II. Stack
 * Introduction
-* Gallery of Photos - Last in First out
-* Push and Pop
-* "Undo" Operations
+* Common Operations
 * Efficiency of common operations
 * Example
 * Problem to Solve
