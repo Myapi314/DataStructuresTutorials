@@ -8,13 +8,13 @@ Just think if we needed to find a needle in a haystack, this could take forever 
 For questions or comments, please send them to:\
     Mya Scottorn\
     sco20041@byui.edu
-## II. Stack
+## II. [Stack](1-stacks.md)
 * Introduction
 * Common Operations
 * Efficiency of common operations
 * Example
 * Problem to Solve
-## III. Set 
+## III. [Set](2-sets.md) 
 * Introduction
 * Unique Values
 * Add and Remove
@@ -22,7 +22,7 @@ For questions or comments, please send them to:\
 * Efficiency of common operations
 * Example
 * Problem to Solve
-## IV. Tree
+## IV. [Tree](3-trees.md)
 * Introduction
 * Binary Search Trees
 * Keeping a Balanced Tree

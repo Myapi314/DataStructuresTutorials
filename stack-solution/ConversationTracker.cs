@@ -2,7 +2,7 @@ namespace stack_solution;
 
 public class ConversationTracker {
     public Stack<string> names = new Stack<string>();
-    public string currName;
+    public string? currName;
 
     public void NewTalker(string name){
         if (currName != null && names.Count < 4) {
