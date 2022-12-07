@@ -8,9 +8,9 @@ Hashing is a built in method in C# that returns an integer based on the given *v
 
 ## Conflict Resolution
 We can see that the method for how we assign the specific index can lead to some conflicts. When these conflicts arise we have two common ways of dealing with them. \
-The first is called open addressing and when it finds something already at the index where the new item would go this process tells the program to put the new value into the next open space. Unfortunately, this method is not perfect and can quickly result in more and more confilcts.\
+The first is called open addressing. With open addressing, when something is already at the index where the new item would go this process would tell the program to put the new value into the next open space. Unfortunately, this method is not perfect and can quickly result in more and more confilcts.\
 Our other option is chaining. Rather than find an open index to store the variable, it simply has a list occupy the space at the conflict index. \
-Both conflict resolution methods can cause not as desirable effects on our algorithmic efficiency and can begin to approach O(1). The solution to this is to increase the size of the sparse array.
+Both conflict resolution methods can cause not as desirable effects on our algorithmic efficiency and can cause the data structure to approach O(n). The solution to this is typically to increase the size of the sparse array.
 ## Mapping
 The set data structure is also commonly used in creating maps. Maps also reffered to as dictionaries allow for us to build out look-up tables, relations, and even objects. This expands the number of problems we can solve using sets by allowing us more flexibility in how we store information. In maps we can have a unique key and a corresponding value. The unique key similar to our hash index for our regular sets allows us to quickly look up values in our mapping.
 ## Common Operations
