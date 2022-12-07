@@ -25,7 +25,7 @@ In C# the built-in data structure for a tree is called ```SortedSet<T>```, howev
 The common operation *insert*, *remove*, and *contains* all have an algorithmic efficiency of O(log n). We can see this in the way these methods are implemened. For example, in order to insert something in the sorted order we need to find where the value fits. We start at the root node, compare if the value is less than or greater than the value in that current node. Based on that distinction we move to the corresponding subtree and continue until we find a leaf and insert after that node. Each time we make this distinction of greater than or less than, we remove half the data we need to inspect (as long as our tree is balanced). Remove and contains work similarly.\
 The traverse methods along with the height are all O(n). This is because in these three methods each node is visited at least once. This takes place with the heigh function as it must determine and compare heights of subtrees in order to find the maximum length of a root to a leaf.\
 Finally size and empty are O(1) similar to our other data structures we have discussed.
-## Example: Sorting Books
+## VI.Example: Sorting Books
 In the example below we will create a program that sorts books by year. 
 
 Sorting Books Requirements:
@@ -35,7 +35,7 @@ Sorting Books Requirements:
 * Able to display the books in order and reversed by year.
 
 With this project we will have three distinct classes- BinarySearchTree, Node, and Book. Our BST is made up of nodes, and the data stored in our nodes is made up of a book. The book will keep track of the title, author and year published. 
-## Problem to Solve: Sorting Books II
+## VII.Problem to Solve: Sorting Books II
 For this problem, we will build off of our example with books and try sorting on a different attribute such as title. 
 
 Sorting Books Requirements:
