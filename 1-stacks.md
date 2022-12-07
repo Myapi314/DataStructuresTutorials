@@ -3,7 +3,7 @@
 Stacks are a useful tool for figuring out where you've been. They are often used in the background of many programs to track where the program has to return to when it completes a function call. 
 ### Last in First Out
 "Last in First Out" commonly shortened to LIFO is the fundamental idea behind a stack. It means that the last thing put on our stack will be the first thing we get if we take something off. 
-### Gallery of Photos
+### Gallery o f Photos
 One way to think about how a stack works would be like the gallery on your phone or camera. When you take a picture on your phone it is *pushed* to your gallery or camera roll. If we open our camera roll, it takes us to the last photo we took, and we can scroll or *pop* our photos off our "stack" to go to the next photo and the next photo. Our camera roll not only keeps track of the last photo we took, but it keeps the whole gallery in order. Now we can go back through our memories to see where we've been.
 
 ## II. Common Operations

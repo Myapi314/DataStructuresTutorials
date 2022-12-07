@@ -16,7 +16,7 @@ For questions or comments, please send them to:\
 * Problem to Solve
 ## III. [Set](2-sets.md) 
 * Introduction
-* Unique Values
+* Unique Values with Hashing
 * Add and Remove
 * Contains
 * Efficiency of common operations
