@@ -1,12 +1,12 @@
 # Stacks
 ## I. Introduction
-Stacks are a useful tool for figuring out where you've been. They are often used in the background of many programs to track where the program has to return to when it completes a function call. 
+Stacks are a useful tool for figuring out where you've been. They are often used in the background of many programs to track where the program has to return to when it completes a function call.
 ### Last in First Out
-"Last in First Out" commonly shortened to LIFO is the fundamental idea behind a stack. It means that the last thing put on our stack will be the first thing we get if we take something off. 
+"Last in First Out" commonly shortened to LIFO is the fundamental idea behind a stack. It means that the last thing put on our stack will be the first thing we get if we take something off.
 ### Gallery of Photos
 One way to think about how a stack works would be like the gallery on your phone or camera. When you take a picture on your phone it is *pushed* to your gallery or camera roll. If we open our camera roll, it takes us to the last photo we took, and we can scroll or *pop* our photos off our "stack" to go to the next photo and the next photo. Our camera roll not only keeps track of the last photo we took, but it keeps the whole gallery in order. Now we can go back through our memories to see where we've been.
 
-![Camera Image](Camera.gif)
+<img src="Camera.gif" alt="camera" height="200"/>
 
 ## II. Common Operations
 ### Push
@@ -18,7 +18,7 @@ When working with a stack it is important to have methods to check both the size
 ## III. Efficiency of common operations
 As we work with different data structures, one of the most important things to consider when deciding which to use is the efficiency of its most commonly used operations. For the stack its primary purpose is to keep order using our LIFO principle. The main operations we covered above are each O(1). This means that stacks are very efficient at their job.
 ## IV. Example: Simple Search History
-In the example below we will create a simple search history. 
+In the example below we will create a simple search history.
 
 Let's begin with our program's requirements to help outline our process for this example:
 
@@ -40,7 +40,7 @@ do {
     Console.WriteLine("4. Quit");
 
     choice = int.Parse(Console.ReadLine()!);
-    
+
     if (choice == 1) {
         Console.Write("Enter search: ");
         var newSearch = Console.ReadLine()!;
@@ -50,7 +50,7 @@ do {
         Console.WriteLine("\n Search History: ");
         foreach (var search in searchHistory)
         {
-            Console.WriteLine(search);   
+            Console.WriteLine(search);
         }
     }
     else if (choice == 3) {
@@ -60,7 +60,7 @@ do {
         Console.WriteLine("Thanks for searching here!");
     }
     else {
-        Console.WriteLine("Invalid choice"); 
+        Console.WriteLine("Invalid choice");
     }
 
 } while (choice != 4);
