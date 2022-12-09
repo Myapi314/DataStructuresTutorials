@@ -30,4 +30,4 @@ For questions or comments, please send them to:\
 * BST Operations 
 * Efficiency of common operations
 * Example: Sorting Books I
-* Problem to Solve: SOrting Books II
+* Problem to Solve: Sorting Books II
