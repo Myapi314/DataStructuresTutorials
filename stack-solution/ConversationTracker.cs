@@ -4,6 +4,10 @@ public class ConversationTracker {
     public Stack<string> names = new Stack<string>();
     public string? currName;
 
+    /// <summary>
+    /// Add a new talker to the conversation.
+    /// </summary>
+    /// <param name="name">The name of the new talker</param>
     public void NewTalker(string name){
         if (currName != null && names.Count < 4) {
             names.Push(currName);
@@ -14,6 +18,9 @@ public class ConversationTracker {
         currName = name;
     }
 
+    /// <summary>
+    /// Update the conversation tracker once someone has finished their story.
+    /// </summary>
     public void DoneTalking() {
         if (names.Count > 0) {
             currName = names.Pop();
@@ -23,6 +30,9 @@ public class ConversationTracker {
         }
     }
 
+    /// <summary>
+    /// Write to the console the current person talking.
+    /// </summary>
     public void WhosTalking() {
         if (currName != null) {
             Console.WriteLine(currName);

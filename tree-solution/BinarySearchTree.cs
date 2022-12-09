@@ -6,18 +6,18 @@ public class BinarySearchTree : IEnumerable<Book> {
     private Node? _root;
 
     /// <summary>
-    /// Insert a new node at the front (i.e. the head) of the linked list.
+    /// Insert a new node at the front (i.e. the root) of the BST
     /// </summary>
     public void Insert(Book value) {
 
         // Create new node
         Node newNode = new Node(value);
 
-        // If the list is empty, then point both head and tail to the new node.
+        // If the BST is empty, then point the root to the new node.
         if (_root is null)
             _root = newNode;
 
-        // If the list is not empty, then only head will be affected.
+        // If the BST is not empty, then only the root will be affected.
         else
             _root.Insert(value);
     }
@@ -62,7 +62,7 @@ public class BinarySearchTree : IEnumerable<Book> {
     }
 
     /// <summary>
-    /// Iterate backward through the Linked List
+    /// Iterate backward through the BST
     /// </summary>
     public IEnumerable Reverse() {
         var books = new List<Book>();

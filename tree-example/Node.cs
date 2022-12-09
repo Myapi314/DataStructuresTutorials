@@ -12,7 +12,7 @@ public class Node {
     /// <summary>
     /// Insert a value into the sorted tree. Not allowing duplicates.
     /// </summary>
-    /// <param name="value">The value to insert</param>
+    /// <param name="value">The book value to insert</param>
     public void Insert(Book value) {
         // Check if the book is already in tree
         if (value.PubYear == Book.PubYear)
@@ -38,19 +38,20 @@ public class Node {
     }
 
     /// <summary>
-    /// Check to see if the node data matches a certain value
+    /// Check to see if the node book year matches a certain year
     /// </summary>
-    /// <param name="value">The value to look for</param>
+    /// <param name="value">The value of the year to look for</param>
     /// <returns>true if found, otherwise false</returns>
     public bool Contains(int value)
     {
-        if (value == Year)
+        if (value == Book.PubYear)
         {
             return true;
         }
 
         // Traverse the tree.
-        if (value < Year) {
+        if (value < Book.PubYear) {
+            
             // Check to the left
             if (Left is null)
                 return false;

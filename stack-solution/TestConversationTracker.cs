@@ -6,7 +6,7 @@ public static class TestConversationTracker {
 
         Console.WriteLine("----------------Test 1-----------");
         // See current name when no names have been added to conversation.
-        conversation.WhosTalking();    // Expected Outcome: Null
+        conversation.WhosTalking();    // Expected Outcome: Message explaining no one is talking
 
         // Bugs Found: 
 

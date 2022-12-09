@@ -7,7 +7,12 @@ public class FilterSurvey {
 
     public Dictionary<string, int> surveySummary = new Dictionary<string, int>();
 
+    /// <summary>
+    /// Summarize the data in a survey by putting the results in a dictionary.
+    /// </summary>
     public void SummarizeSurvey(){
+
+        // Iterate through each color and update the dictionary.
         foreach (var color in favoriteColors) {
             if (surveySummary.ContainsKey(color))
             {
@@ -19,6 +24,7 @@ public class FilterSurvey {
             }
         }
 
+        // Display the updated dictionary.
         Console.WriteLine($"Color : Number of times chosen");
         surveySummary.ToList().ForEach(colors => Console.WriteLine($"{colors.Key} : {surveySummary[colors.Key]}"));
     }

@@ -16,17 +16,18 @@ For questions or comments, please send them to:\
 * Problem to Solve
 ## III. [Set](2-sets.md) 
 * Introduction
-* Unique Values with Hashing
-* Add and Remove
-* Contains
+* Hashing
+* Conflict Resolution
+* Mapping
+* Common Operations
 * Efficiency of common operations
-* Example
-* Problem to Solve
+* Example: Removing Duplicates from a File
+* Problem to Solve: Results of a Survey
 ## IV. [Tree](3-trees.md)
 * Introduction
 * Binary Search Trees
-* Keeping a Balanced Tree
+* Recursion
 * BST Operations 
 * Efficiency of common operations
-* Example
-* Problem to Solve
+* Example: Sorting Books I
+* Problem to Solve: SOrting Books II

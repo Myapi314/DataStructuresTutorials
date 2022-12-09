@@ -12,14 +12,14 @@ public static class TestBst {
         tree.Insert(new Book("Fablehaven", "Brandon Mull", 2006));
         tree.Insert(new Book("Matched", "Ally Condie", 2010));
 
-        tree.Insert(new Book("Beyonders", "Brandon Mull", 2011));   // Expected: No Duplicate Titles allowed
+        tree.Insert(new Book("Beyonders", "Brandon Mull", 2011));   // Expected: No Duplicate Years allowed
 
         Console.WriteLine(tree.ToString()); 
-        //Expected: <Bst>{<Book>{Title: Beyonders, Author: Brandon Mull, Year: 2011}, 
-        // <Book>{Title: Fablehaven, Author: Brandon Mull, Year: 2006},
-        // <Book>{Title: Kingdom of the Wicked, Author: Keri Maniscalco, Year: 2020},
+        // Expected: <Bst>{<Book>{Title: Fablehaven, Author: Brandon Mull, Year: 2006},     
+        // <Book>{Title: Maze Runner, Author: James Dashner, Year: 2009},
         // <Book>{Title: Matched, Author: Ally Condie, Year: 2010},
-        // <Book>{Title: Maze Runner, Author: James Dashner, Year: 2009}}
+        // <Book>{Title: Beyonders, Author: Brandon Mull, Year: 2011},
+        // <Book>{Title: Kingdom of the Wicked, Author: Keri Maniscalco, Year: 2020}}
 
         Console.WriteLine("\n=========== PROBLEM 2 TESTS ===========");
         Console.WriteLine(tree.Contains(2009)); // True
@@ -32,11 +32,11 @@ public static class TestBst {
         foreach (var value in tree.Reverse()) {
             Console.WriteLine(value); 
         }
-        // Expected: <Book>{Title: Maze Runner, Author: James Dashner, Year: 2009}
-        // <Book>{Title: Matched, Author: Ally Condie, Year: 2010}
-        // <Book>{Title: Kingdom of the Wicked, Author: Keri Maniscalco, Year: 2020}
-        // <Book>{Title: Fablehaven, Author: Brandon Mull, Year: 2006}
+        // Expected: <Book>{Title: Kingdom of the Wicked, Author: Keri Maniscalco, Year: 2020}
         // <Book>{Title: Beyonders, Author: Brandon Mull, Year: 2011}
+        // <Book>{Title: Matched, Author: Ally Condie, Year: 2010}
+        // <Book>{Title: Maze Runner, Author: James Dashner, Year: 2009}
+        // <Book>{Title: Fablehaven, Author: Brandon Mull, Year: 2006}
 
 
         Console.WriteLine("\n=========== PROBLEM 4 TESTS ===========");

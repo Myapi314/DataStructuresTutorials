@@ -6,14 +6,14 @@ public class BinarySearchTree : IEnumerable<Book> {
     private Node? _root;
 
     /// <summary>
-    /// Insert a new node at the front (i.e. the head) of the linked list.
+    /// Insert a new node at the front (i.e. the root) of the BST.
     /// </summary>
     public void Insert(Book value) {
 
         // Create new node
         Node newNode = new Node(value);
 
-        // If the list is empty, then point both head and tail to the new node.
+        // If the list is empty, then point root to the new node.
         if (_root is null)
             _root = newNode;
 
@@ -62,7 +62,7 @@ public class BinarySearchTree : IEnumerable<Book> {
     }
 
     /// <summary>
-    /// Iterate backward through the Linked List
+    /// Iterate backward through the BST.
     /// </summary>
     public IEnumerable Reverse() {
         var books = new List<Book>();
@@ -73,7 +73,7 @@ public class BinarySearchTree : IEnumerable<Book> {
     }
 
     /// <summary>
-    /// Traverse through the BST from greates to least
+    /// Traverse through the BST from greatest to least
     /// </summary>
     private void TraverseBackward(Node? node, List<Book> values) {
 
