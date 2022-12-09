@@ -44,5 +44,5 @@ Sorting Books Requirements:
 * Able to get the height of the tree.
 * Able to display the books in alphabetical order and reversed by title.
 
-See [solution](tree-solution)
+See [solution](tree-solution)\
 Return to [overview](0-overview.md)

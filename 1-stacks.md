@@ -84,5 +84,5 @@ Test the program with the following scenarios:
 * Test 4: Add "Kyle", Add "Ethan", Remove "Ethan", See current name.\
     Expected Output: "Kyle"
 
-Check out the sample solution [here](stack-solution)!
+Check out the sample solution [here](stack-solution)!\
 Return to [overview](0-overview.md)

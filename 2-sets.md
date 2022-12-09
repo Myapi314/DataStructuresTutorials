@@ -75,5 +75,5 @@ Program Requirements:
 * Keep track of the unique colors and the number of times each occurs in survey.
 * Able to quickly look up if color was mentioned in survey and if so how many times it was listed as a favorite color.
 
-Check out the sample solution [here](set-solution)!
+Check out the sample solution [here](set-solution)!\
 Return to [overview](0-overview.md)
