@@ -46,17 +46,6 @@ public static class TestBst {
         tree.Insert(new Book("Matilda", "Roald Dahl", 1988));
         Console.WriteLine(tree.GetHeight()); // 5
 
-        // Console.WriteLine("\n=========== PROBLEM 5 TESTS ===========");
-        // var tree1 = CreateTreeFromSortedList(new[] { 10, 20, 30, 40, 50, 60 });
-        // var tree2 = CreateTreeFromSortedList(Enumerable.Range(0, 127).ToArray()); // 2^7 - 1 nodes
-        // var tree3 = CreateTreeFromSortedList(Enumerable.Range(0, 128).ToArray()); // 2^7 nodes
-        // var tree4 = CreateTreeFromSortedList(new[] { 42 });
-        // var tree5 = CreateTreeFromSortedList(Array.Empty<int>());
-        // Console.WriteLine(tree1.GetHeight()); // 3
-        // Console.WriteLine(tree2.GetHeight()); // 7 .. any higher and its not balanced
-        // Console.WriteLine(tree3.GetHeight()); // 8 .. any higher and its not balanced
-        // Console.WriteLine(tree4.GetHeight()); // 1
-        // Console.WriteLine(tree5.GetHeight()); // 0
     }
 
 }

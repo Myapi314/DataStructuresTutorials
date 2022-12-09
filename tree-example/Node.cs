@@ -2,13 +2,11 @@ namespace tree_example;
 
 public class Node {
     public Book Book {get; set;} 
-    public int Year {get; set;}
     public Node? Right { get; private set; }
     public Node? Left { get; private set; }
 
     public Node(Book book) {
         this.Book = book;
-        this.Year = this.Book.PubYear;
     }
 
     /// <summary>
@@ -23,7 +21,7 @@ public class Node {
             Console.WriteLine("Cannot Add Duplicate Years.");
             return;
         }
-        if (value.PubYear < Year) {
+        if (value.PubYear < Book.PubYear) {
             // Insert to the left
             if (Left is null)
                 Left = new Node(value);
