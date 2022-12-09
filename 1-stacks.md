@@ -6,13 +6,15 @@ Stacks are a useful tool for figuring out where you've been. They are often used
 ### Gallery of Photos
 One way to think about how a stack works would be like the gallery on your phone or camera. When you take a picture on your phone it is *pushed* to your gallery or camera roll. If we open our camera roll, it takes us to the last photo we took, and we can scroll or *pop* our photos off our "stack" to go to the next photo and the next photo. Our camera roll not only keeps track of the last photo we took, but it keeps the whole gallery in order. Now we can go back through our memories to see where we've been.
 
+![Camera Image](Camera.gif)
+
 ## II. Common Operations
 ### Push
-The operation to add something to the top of our stack is called "*push*". To push in C# we use ```myStack.Push(value);```
+The operation to add something to the top of our stack is called "*push*". To push in C# we use ```myStack.Push(value)```
 ### Pop
-When we want to take what is on the top of our stack off we "*pop*" it off the stack. To pop in C# we use ```myStack.Pop();```. Pop also returns the value taken off the stack.
+When we want to take what is on the top of our stack off we "*pop*" it off the stack. To pop in C# we use ```myStack.Pop()```. Pop also returns the value taken off the stack.
 ### Other useful operations
-When working with a stack it is important to have methods to check both the size of the stack and when the stack is empty. We can accomplish both of these using the C# code ```myStack.Count();``` which will return the size of the stack.
+When working with a stack it is important to have methods to check both the size of the stack and when the stack is empty. We can accomplish both of these using the C# code ```myStack.Count()``` which will return the size of the stack.
 ## III. Efficiency of common operations
 As we work with different data structures, one of the most important things to consider when deciding which to use is the efficiency of its most commonly used operations. For the stack its primary purpose is to keep order using our LIFO principle. The main operations we covered above are each O(1). This means that stacks are very efficient at their job.
 ## IV. Example: Simple Search History

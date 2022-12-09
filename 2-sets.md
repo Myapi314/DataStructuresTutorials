@@ -3,8 +3,8 @@
 Another useful data structure to help solve unique problems is a set. A set is a collection of unique values that allows us to quickly add, remove, or test for membership. 
 
 ## II. Hashing
-A set is able to perform the way it does by using a method called hashing. The idea for the set is that given a value it will systematically be placed in an array at a certain index. Then when checking for this value in the array we can look at that specific index to find it rather than searching the whole array. The way the index is achieved is through hashing.\
-Hashing is a built in method in C# that returns an integer based on the given *value* regardless of the data type. This is done with the method ```value.GetHashCode();```. However, we can't just use that hash code alone for the index in our array. The final formula will look more like ```hash(data) % sparseArraySize```.
+A set is able to perform the way it does by using a method called hashing. The idea for the set is that given a value it will systematically be placed in an array at a certain index. Then when checking for this value in the array we can look at that specific index to find it rather than searching the whole array. The way the index is found is through hashing.\
+Hashing is a built-in method in C# that returns an integer based on the given *value* regardless of the data type. This is done with the method ```value.GetHashCode()```. However, we can't just use that hash code alone for the index in our array. The final formula will look more like ```hash(data) % sparseArraySize```.
 
 ## Conflict Resolution
 We can see that the method for how we assign the specific index can lead to some conflicts. When these conflicts arise we have two common ways of dealing with them. \
@@ -12,15 +12,15 @@ The first is called open addressing. With open addressing, when something is alr
 Our other option is chaining. Rather than find an open index to store the variable, it simply has a list occupy the space at the conflict index. \
 Both conflict resolution methods can cause not as desirable effects on our algorithmic efficiency and can cause the data structure to approach O(n). The solution to this is typically to increase the size of the sparse array.
 ## Mapping
-The set data structure is also commonly used in creating maps. Maps also reffered to as dictionaries allow for us to build out look-up tables, relations, and even objects. This expands the number of problems we can solve using sets by allowing us more flexibility in how we store information. In maps we can have a unique key and a corresponding value. The unique key similar to our hash index for our regular sets allows us to quickly look up values in our mapping.
+The set data structure is also commonly used in creating maps. Maps also reffered to as dictionaries allow for us to build out look-up tables, relations, and even objects. This expands the number of problems we can solve using sets by allowing us more flexibility in how we store information and the amount of information. In maps we can have a unique key and a corresponding value. The unique key similar to our hash index for our regular sets allows us to quickly look up values in our mapping.
 ## Common Operations
 The common operations involved with a regular set are displayed in the table below:
 | C# Code                      | Description                            |
 |------------------------------|----------------------------------------|
-| ```mySet.Add(value);```      | Adds the "value" to mySet.             |
-| ```mySet.Remove(value);```   | Removes the "value" from mySet.        |
-| ```mySet.Contains(value);``` | Checks if the "value" exists in mySet. |
-| ```mySet.Count;```           | Returns the size of mySet.             |
+| ```mySet.Add(value)```      | Adds the "value" to mySet.             |
+| ```mySet.Remove(value)```   | Removes the "value" from mySet.        |
+| ```mySet.Contains(value)``` | Checks if the "value" exists in mySet. |
+| ```mySet.Count```           | Returns the size of mySet.             |
 
 There are similar methods associated with maps listed in the table below:
 | C# Code                                                  | Description                                                                                                                            |
